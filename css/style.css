@@ -8,7 +8,7 @@
 
 .debug .site_header{
     background-color: aqua;
-}
+} 
 
 .debug .site_header>.container{
     height: 40px;
@@ -144,6 +144,7 @@
 .site_header{
     padding-top: 1rem;
     padding-bottom: 1rem;
+    background-color: #007ddf;
 }
 
 .container{
@@ -182,7 +183,15 @@ li{
 
 li>a{
     text-decoration: none;
+    padding: 1rem;
+    color: white;
+}
+
+.login>button{
     padding: 0.5rem;
+    border-radius: 2rem;
+    background-color: white;
+    border: none;
 }
 
 /* Main */
