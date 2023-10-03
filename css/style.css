@@ -154,10 +154,18 @@
 .container{
     width: 80%;
     margin: auto;
+    max-width: 1152px;
 }
 
 .row{
     display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+}
+
+[class^="col-"]{
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .site_logo, .nav_link, .login{
@@ -205,6 +213,8 @@ button{
 .section_speak{
     background-image: url('../img/jumbo.png');
     background-size: cover;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
 }
 
 .padding_section{
@@ -234,9 +244,26 @@ button{
     margin-left: 1rem;
 }
 
+.col-7>img{
+    max-width: 100%;
+}
+
+.padding_item{
+    padding: 1.5rem;
+}
+
+.col-5>h2{
+    font-size: 36px;
+    margin-bottom: 1rem;
+}
+
 .info_tecnologies{
     margin: auto;
     width: 80%;
+}
+
+p{
+    font-size: 18px;
 }
 
 /* Footer */
@@ -260,4 +287,10 @@ button{
 
 .logo_footer, .button_footer{
     padding: 0.3rem;
+}
+
+.wave{
+    background-image: url('../img/wave.svg');
+    background-repeat: repeat-x;
+    height: 20px;
 }
