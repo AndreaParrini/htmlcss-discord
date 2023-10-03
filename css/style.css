@@ -132,11 +132,15 @@
 }
 
 .col-6{
-    width: calc((100% / 12) *6);
+    width: 50%;
 }
 
 .col-7{
     width: calc((100% / 12) *7);
+}
+
+.col-12{
+    width: 100%;
 }
 
 /* Header */
@@ -144,7 +148,7 @@
 .site_header{
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #007ddf;
+    background-color: #265ee9;
 }
 
 .container{
@@ -174,6 +178,9 @@
 
 .nav_link>ul{
     display: flex;
+}
+
+.justify-center{
     justify-content: center;
 }
 
@@ -187,7 +194,7 @@ li>a{
     color: white;
 }
 
-.login>button{
+button{
     padding: 0.5rem;
     border-radius: 2rem;
     background-color: white;
@@ -195,6 +202,10 @@ li>a{
 }
 
 /* Main */
+.section_speak{
+    background-image: url('../img/jumbo.png');
+    background-size: cover;
+}
 
 .padding_section{
     padding-top: 1.5rem;
@@ -204,7 +215,24 @@ li>a{
 .link_open_app{
     width: 60%;
     margin: auto;
+    text-align: center;
+    color: white;
 } 
+
+.link_open_app h1{
+    font-size: 40px;
+    margin: 2rem 0;
+}
+
+.link_open_app>.row{
+    margin: 2rem 0;
+}
+
+.open_browser{
+    background-color: black;
+    color: white;
+    margin-left: 1rem;
+}
 
 .info_tecnologies{
     margin: auto;
