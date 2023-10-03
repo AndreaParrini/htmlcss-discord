@@ -262,6 +262,10 @@ button{
     width: 80%;
 }
 
+[class^="section_"]>.container{
+    padding: 2rem 0;
+}
+
 p{
     font-size: 18px;
 }
@@ -291,6 +295,5 @@ p{
 
 .wave{
     background-image: url('../img/wave.svg');
-    background-repeat: repeat-x;
-    height: 20px;
+    height: 10px;
 }
