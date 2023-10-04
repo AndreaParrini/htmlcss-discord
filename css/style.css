@@ -202,11 +202,12 @@ li>a{
     color: white;
 }
 
-button{
+.a{
     padding: 0.5rem;
     border-radius: 2rem;
     background-color: white;
     border: none;
+    text-decoration: none;
 }
 
 /* Main */
@@ -227,8 +228,11 @@ button{
     width: 60%;
     margin: 6rem auto;
     text-align: center;
-    color: white;
 } 
+
+.link_open_app>h1, .link_open_app>p {
+    color: white;
+}
 
 .link_open_app h1{
     font-size: 40px;
@@ -266,6 +270,11 @@ button{
     margin-bottom: 1rem;
 }
 
+.wave{
+    background-image: url('../img/wave.svg');
+    height: 10px;
+}
+
 .info_tecnologies{
     margin: auto;
     width: 80%;
@@ -294,6 +303,7 @@ p{
     background-color: #8ea1e1;
     color: white;
     margin-top: 2rem;
+    display: inline-block;
 }
 
 .row.column{
@@ -305,13 +315,11 @@ p{
 
 .site_footer{
     padding-top: 0.3rem;
-}
-
-.site_footer>hr{
-    margin-top: 1.5rem;
+    background-color: #23272b;
 }
 
 .bt_footer{
+    border-top: 1px solid #8ea1e1;
     width:80%;
     margin:auto;
     margin-top: 1rem;
@@ -324,7 +332,30 @@ p{
     padding: 0.3rem;
 }
 
-.wave{
-    background-image: url('../img/wave.svg');
-    height: 10px;
+.ita.row{
+    align-items: flex-end;
+    margin: 0 0;
+    margin-top: 0.5rem;
+    color: white;
+}
+
+.site_footer h4{
+    color: #8ea1e1;
+    font-size: 20px;
+}
+
+.row.social{
+    margin: 0;
+}
+
+.ita>img{
+    height: 25px;
+    margin-right: 0.5rem;
+}
+
+.social img{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
 }
