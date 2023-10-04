@@ -279,6 +279,7 @@ li{
     margin: auto;
     width: 80%;
     text-align: center;
+    max-width: 1152px;
 }
 
 .info_tecnologies>h2{
@@ -367,6 +368,7 @@ p{
     border-top: 1px solid #8ea1e1;
     width:80%;
     margin:auto;
+    max-width: 1152px;
     margin-top: 1rem;
     display: flex;
     padding: 1rem 0;
