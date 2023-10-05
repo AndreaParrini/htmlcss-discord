@@ -4,7 +4,16 @@
     box-sizing: border-box;
 }
 
-/* Debug Header */
+:root {
+    --discord-primary: #265ee9;
+    --discord-accent: #8ea1e1;
+    --discord-black: black;
+    --discord-white: white;
+    --discord-footer: #23272b;
+    --discord-second: #f6f6f6;
+}
+
+/* #Debug Header */
 
 .debug .site_header{
     background-color: aqua;
@@ -148,7 +157,7 @@
 .site_header{
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #265ee9;
+    background-color: var(--discord-primary);
 }
 
 .container{
@@ -199,13 +208,13 @@ li{
 .site_header li>a{
     text-decoration: none;
     padding: 1rem;
-    color: white;
+    color: var(--discord-white);
 }
 
 .a{
     padding: 0.5rem;
     border-radius: 2rem;
-    background-color: white;
+    background-color: var(--discord-white);
     border: none;
     text-decoration: none;
 }
@@ -231,7 +240,7 @@ li{
 } 
 
 .link_open_app>h1, .link_open_app>p {
-    color: white;
+    color: var(--discord-white);
 }
 
 .link_open_app h1{
@@ -250,8 +259,8 @@ li{
 }
 
 .open_browser{
-    background-color: black;
-    color: white;
+    background-color: var(--discord-black);
+    color: var(--discord-white);
     margin-left: 1rem;
     font-size: 18px;
     padding: 1rem;
@@ -301,8 +310,8 @@ p{
 }
 
 .info_tecnologies>.download_mac{
-    background-color: #8ea1e1;
-    color: white;
+    background-color: var(--discord-accent);
+    color: var(--discord-white);
     margin-top: 2rem;
     display: inline-block;
 }
@@ -316,7 +325,7 @@ p{
 
 .site_footer{
     padding-top: 1rem;
-    background-color: #23272b;
+    background-color: var(--discord-footer);
 }
 
 .site_footer>.container{
@@ -327,11 +336,11 @@ p{
     align-items: flex-end;
     margin: 0 0;
     margin-top: 0.5rem;
-    color: white;
+    color: var(--discord-white);
 }
 
 .site_footer h4{
-    color: #8ea1e1;
+    color: var(--discord-accent);
     font-size: 20px;
 }
 
@@ -356,16 +365,16 @@ p{
 }
 
 .site_footer li:first-child{
-    color: #8ea1e1;
+    color: var(--discord-accent);
 }
 
 .site_footer a{
     text-decoration: none;
-    color: white;
+    color: var(--discord-white);
 }
 
 .bt_footer{
-    border-top: 1px solid #8ea1e1;
+    border-top: 1px solid var(--discord-accent);
     width:80%;
     margin:auto;
     max-width: 1152px;
@@ -382,5 +391,5 @@ p{
 }
 
 .button_footer{
-    background-color: #8ea1e1;
+    background-color: var(--discord-accent);
 }
