@@ -136,24 +136,27 @@
     width: calc((100% / 12) *4);
 }
 
-.col-5{
-    width: calc((100% / 12) *5);
+.col-4{
+    width: calc((100% / 12) *4);
 }
 
 .col-6{
     width: 50%;
 }
 
-.col-7{
-    width: calc((100% / 12) *7);
+.col-8{
+    width: calc((100% / 12) *8);
 }
 
 .col-12{
     width: 100%;
 }
 
-/* Header */
+p{
+    line-height: 150%;
+}
 
+/* Header */
 .site_header{
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -195,6 +198,7 @@
 
 .nav_link>ul{
     display: flex;
+    justify-content: space-between;
 }
 
 .justify-center{
@@ -266,7 +270,7 @@ li{
     padding: 1rem;
 }
 
-.col-7>img{
+.col-8>img{
     max-width: 100%;
 }
 
@@ -274,14 +278,25 @@ li{
     padding: 1.5rem;
 }
 
-.col-5>h2{
+.col-4>h2{
     font-size: 36px;
     margin-bottom: 1rem;
 }
 
 .wave{
-    background-image: url('../img/wave.svg');
-    height: 10px;
+    color: var(--discord-second);
+    margin-bottom: -2rem;
+}
+
+.wave-top{
+    color: var(--discord-second);
+    transform: rotate(180deg);
+    margin-top: -2rem;
+}
+
+
+.section_tecnologies, .section_room{
+    background-color: var(--discord-second);
 }
 
 .info_tecnologies{
