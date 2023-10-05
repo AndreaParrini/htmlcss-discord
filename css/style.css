@@ -233,8 +233,8 @@ li{
 }
 
 .padding_section{
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
 }
 
 .link_open_app{
@@ -285,13 +285,13 @@ li{
 
 .wave{
     color: var(--discord-second);
-    margin-bottom: -2rem;
+    margin-bottom: -3rem;
 }
 
 .wave-top{
     color: var(--discord-second);
     transform: rotate(180deg);
-    margin-top: -2rem;
+    margin-top: -3rem;
 }
 
 
