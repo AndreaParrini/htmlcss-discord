@@ -513,7 +513,7 @@ button:hover{
     height: 2px;
     width: 0px;
     background: transparent;
-    transition: width .5s ease-out, background-color .5s ease;
+    transition: width 500ms ease-out, background-color 500ms ease;
 }
 .site_header li>a:hover:after {
     width: 100%;
