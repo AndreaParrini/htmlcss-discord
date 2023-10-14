@@ -160,6 +160,7 @@ button{
     padding: 0.5rem;
     border-radius: 2rem;
     border: none;
+    transition: box-shadow 1s linear;
 }
 
 /* Header */
@@ -194,6 +195,11 @@ button{
 
 .site_logo{
     padding-left: 0.5rem;
+}
+
+.site_logo>img{
+    animation: logo 3s linear;
+    filter: opacity(1);
 }
 
 .login{
@@ -420,4 +426,33 @@ p{
 
 .button_footer{
     background-color: var(--discord-accent);
+    transition: box-shadow 1s linear;
+}
+
+/* animation and transition */
+
+/* button shadow */
+button:hover{
+    box-shadow: 2px 2px 15px black;
+}
+
+.button_footer:hover{
+    box-shadow: 1px 1px 8px #9E9E9E;
+}
+
+/* animation logo */
+
+@keyframes logo{
+    0%{
+        filter: opacity(0);
+    }
+
+    50%{
+        filter: opacity(0.5);
+    }
+
+    100%{
+        filter: opacity(1);
+    }
+    
 }
