@@ -291,6 +291,12 @@ li{
     max-width: 100%;
 }
 
+[class^="col-"]>img, .info_tecnologies>img{
+    filter: blur(3px) brightness(0.5);
+    animation: image 5s linear;
+    transition: filter 1s linear;
+}
+
 .padding_item{
     padding: 1.5rem;
 }
@@ -455,4 +461,22 @@ button:hover{
         filter: opacity(1);
     }
     
+}
+
+/* animation img */
+
+@keyframes image {
+    0%{
+        filter: blur(0) brightness(1);
+    }
+    50%{
+        filter: blur(1.5px) brightness(0.2);
+    }
+    100%{
+        filter: blur(3px) brightness(0.5); 
+    }
+}
+
+[class^="col-"] img:hover, .info_tecnologies img:hover{
+    filter: blur(0) brightness(1);
 }
