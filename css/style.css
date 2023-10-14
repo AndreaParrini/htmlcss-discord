@@ -163,11 +163,8 @@ button{
     transition: box-shadow 1s linear;
 }
 
-/* Header */
-.site_header{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background-color: var(--discord-primary);
+.d-flex{
+    display: flex;
 }
 
 .container{
@@ -187,10 +184,37 @@ button{
     padding-right: 1rem;
 }
 
-.site_logo, .nav_link, .login{
-    height: 40px;
-    vertical-align: middle;
-    line-height: 40px;
+.align-items-center{
+    align-items: center;
+}
+
+/* Header */
+.site_header{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--discord-primary);
+	color: var(--discrod-white);
+	padding: 0.5rem 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+    z-index: 999;
+}
+
+
+
+.site_logo, .login{
+    flex-grow: 1;
+}
+
+.nav_link{
+    flex-grow: 2;
+	text-align: center;
+	list-style: none;
+	display: flex;
+	gap: 3rem;
+	justify-content: center;
 }
 
 .site_logo{
@@ -230,7 +254,6 @@ li{
 
 .site_header li>a{
     text-decoration: none;
-    padding: 1rem;
     color: var(--discord-white);
 }
 
@@ -479,4 +502,20 @@ button:hover{
 
 [class^="col-"] img:hover, .info_tecnologies img:hover{
     filter: blur(0) brightness(1);
+}
+
+/* li transition */
+
+.site_header li>a:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease-out, background-color .5s ease;
+}
+.site_header li>a:hover:after {
+    width: 100%;
+    background: white;
 }
