@@ -416,11 +416,11 @@ p{
     margin-right: 0.5rem;
 }
 
-.social img{
-    width: 2rem;
-    height: 2rem;
+.social i{
     margin-right: 1rem;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+    color: #ffffff;
+    transition: transform 500ms linear;
 }
 
 .site_footer li{
@@ -504,7 +504,7 @@ button:hover{
     filter: blur(0) brightness(1);
 }
 
-/* li transition */
+/* li a header transition */
 
 .site_header li>a:after {
     content: '';
@@ -518,4 +518,16 @@ button:hover{
 .site_header li>a:hover:after {
     width: 100%;
     background: white;
+}
+
+/* li a footer animation */
+
+.site_footer li>a:hover {
+    color: var(--discord-accent);
+}
+
+/* animation link social */
+
+.social i:hover{
+    transform: scale(2);
 }
